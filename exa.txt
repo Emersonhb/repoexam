@@ -1,0 +1,390 @@
+cd
+benie@LAPTOP-3E2BDN86 MINGW64 ~
+$ cd c:
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c
+$ cd exam
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam
+$ git clone https://github.com/Emersonhb/repoexam
+Cloning into 'repoexam'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam
+$ git branch produccion
+fatal: not a git repository (or any of the parent directories): .git
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam
+$ cd repoexam
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git branch produccion
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git branch ventas
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git branch recurso_humano
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git branch
+* main
+  produccion
+  recurso_humano
+  ventas
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git merge produccion
+Already up to date.
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git checkout
+Your branch is up to date with 'origin/main'.
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git checkout produccion
+Switched to branch 'produccion'
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (produccion)
+$ git push origin produccion
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'produccion' on GitHub by visiting:
+remote:      https://github.com/Emersonhb/repoexam/pull/new/produccion
+remote:
+To https://github.com/Emersonhb/repoexam
+ * [new branch]      produccion -> produccion
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (produccion)
+$ git status
+On branch produccion
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        produccion/
+        recurso_humano/
+        ventas/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (produccion)
+$ git add produccion
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (produccion)
+$ git status
+On branch produccion
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   produccion/materiaprima.txt
+        new file:   produccion/mueble.jpg
+        new file:   produccion/productofinal.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        recurso_humano/
+        ventas/
+
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (produccion)
+$ git commit -m "agregar elementos a la carpeta produccion"
+[produccion df9b83f] agregar elementos a la carpeta produccion
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 produccion/materiaprima.txt
+ create mode 100644 produccion/mueble.jpg
+ create mode 100644 produccion/productofinal.txt
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (produccion)
+$ git push origin produccion
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 38.97 KiB | 19.48 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Emersonhb/repoexam
+   bad9f40..df9b83f  produccion -> produccion
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (produccion)
+$ git checkout ventas
+Switched to branch 'ventas'
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (ventas)
+$ git status
+On branch ventas
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        recurso_humano/
+        ventas/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (ventas)
+$ git add ventas
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (ventas)
+$ git commit -m "agregar elementos a la carpeta ventas"
+[ventas e94cb25] agregar elementos a la carpeta ventas
+ 1 file changed, 3 insertions(+)
+ create mode 100644 ventas/tiendas.txt
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (ventas)
+$ git push origin ventas
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 365 bytes | 365.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ventas' on GitHub by visiting:
+remote:      https://github.com/Emersonhb/repoexam/pull/new/ventas
+remote:
+To https://github.com/Emersonhb/repoexam
+ * [new branch]      ventas -> ventas
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (ventas)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git status
+On branch recurso_humano
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        recurso_humano/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git add recurso_humano
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git commit -m "agregar elementos a la carpeta recurso_humano"
+[recurso_humano 6526450] agregar elementos a la carpeta recurso_humano
+ 1 file changed, 5 insertions(+)
+ create mode 100644 recurso_humano/empleados.txt
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 394 bytes | 394.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'recurso_humano' on GitHub by visiting:
+remote:      https://github.com/Emersonhb/repoexam/pull/new/recurso_humano
+remote:
+To https://github.com/Emersonhb/repoexam
+ * [new branch]      recurso_humano -> recurso_humano
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git merge produccion
+Updating bad9f40..df9b83f
+Fast-forward
+ produccion/materiaprima.txt  |   0
+ produccion/mueble.jpg        | Bin 0 -> 39755 bytes
+ produccion/productofinal.txt |   0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 produccion/materiaprima.txt
+ create mode 100644 produccion/mueble.jpg
+ create mode 100644 produccion/productofinal.txt
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git tag version1
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git tag
+version1
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git push origin version1
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Emersonhb/repoexam
+ * [new tag]         version1 -> version1
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git checkout produccion
+Switched to branch 'produccion'
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (produccion)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git show
+commit 6526450975715a50e6c441c0444c215f78f42c43 (HEAD -> recurso_humano, origin/recurso_humano)
+Author: Emerson Hernandez <emertj1@gmail.com>
+Date:   Mon Jun 12 18:11:35 2023 -0600
+
+    agregar elementos a la carpeta recurso_humano
+
+diff --git a/recurso_humano/empleados.txt b/recurso_humano/empleados.txt
+new file mode 100644
+index 0000000..15a833f
+--- /dev/null
++++ b/recurso_humano/empleados.txt
+@@ -0,0 +1,5 @@
++Benny
++Enrique
++Jose
++Carlos
++Diego
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git add recurso_humano
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git commit -m "agregar nuevos empleados a archivo empleado"
+[recurso_humano b5d516e] agregar nuevos empleados a archivo empleado
+ 1 file changed, 7 insertions(+)
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git show
+commit b5d516eef5d49958f00c490e4f15dd08be348060 (HEAD -> recurso_humano)
+Author: Emerson Hernandez <emertj1@gmail.com>
+Date:   Mon Jun 12 18:21:54 2023 -0600
+
+    agregar nuevos empleados a archivo empleado
+
+diff --git a/recurso_humano/empleados.txt b/recurso_humano/empleados.txt
+index 15a833f..bca2d4b 100644
+--- a/recurso_humano/empleados.txt
++++ b/recurso_humano/empleados.txt
+@@ -3,3 +3,10 @@ Enrique
+ Jose
+ Carlos
+ Diego
++
++
++SAMUEL
++PEDRO
++RICARDO
++JUANITA
++ESTELA
+\ No newline at end of file
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git merge recurso_humano
+Merge made by the 'ort' strategy.
+ recurso_humano/empleados.txt | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 recurso_humano/empleados.txt
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git tag version1.1
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git tag
+version1
+version1.1
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git push origin version1.1
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 766 bytes | 766.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Emersonhb/repoexam
+ * [new tag]         version1.1 -> version1.1
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git checkout ventas
+Switched to branch 'ventas'
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (ventas)
+$ git add ventas
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (ventas)
+$ git commit -m "agregar nuevas tiendas"
+[ventas d5de12a] agregar nuevas tiendas
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (ventas)
+$ git push origin ventas
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 366 bytes | 366.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Emersonhb/repoexam
+   e94cb25..d5de12a  ventas -> ventas
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (ventas)
+$ git checkout recurso_humano
+Switched to branch 'recurso_humano'
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git add recurso_humano
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git commit -m "agregar fotos empleados"
+[recurso_humano 57a4f02] agregar fotos empleados
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 recurso_humano/foto_empleado/e1.png
+ create mode 100644 recurso_humano/foto_empleado/e2.png
+ create mode 100644 recurso_humano/foto_empleado/e3.png
+ create mode 100644 recurso_humano/foto_empleado/e4.png
+ create mode 100644 recurso_humano/foto_empleado/e5.png
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 9.02 KiB | 9.02 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Emersonhb/repoexam
+   6526450..57a4f02  recurso_humano -> recurso_humano
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git add recurso_humano
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git commit -m "agregar sueldos con puestos"
+[recurso_humano b397f83] agregar sueldos con puestos
+ 1 file changed, 4 insertions(+)
+ create mode 100644 recurso_humano/sueldos.txt
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git push origin recurso_humano
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 484 bytes | 484.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Emersonhb/repoexam
+   57a4f02..b397f83  recurso_humano -> recurso_humano
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (recurso_humano)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Emersonhb/repoexam
+   bad9f40..bf7327f  main -> main
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
