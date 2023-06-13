@@ -388,3 +388,32 @@ To https://github.com/Emersonhb/repoexam
    bad9f40..bf7327f  main -> main
 
 benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git push origin main
+Everything up-to-date
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git push
+Everything up-to-date
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git add exa.txt
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git commit -m "agregar exa.txt"
+[main 26d8b3d] agregar exa.txt
+ 1 file changed, 390 insertions(+)
+ create mode 100644 exa.txt
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.37 KiB | 2.37 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Emersonhb/repoexam
+   bf7327f..26d8b3d  main -> main
+
+benie@LAPTOP-3E2BDN86 MINGW64 /c/exam/repoexam (main)
+
