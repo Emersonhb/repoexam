@@ -1,0 +1,4 @@
+sueldo 1 4000 gerente
+sueldo 2 7000 auxiliaer
+sueldo 3 6000 gerente principal
+sueldo 4 9000 socio
